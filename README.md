@@ -3,7 +3,7 @@
 A youth group web app game where teams complete challenges to collect cash to invest in physical local town sectors - most owned sectors wins - think risk / monopoly. If you're a visual leaner: [view the inspiration for the game](https://www.youtube.com/watch?v=Ep34bvS4Y9Q)
 
 <p align="center">
-  <img width="300" src="">
+  <img width="300" src="https://github.com/user-attachments/assets/0433ee39-43ad-4a34-91f8-6ac7b59661e8">
 </p>
 
 ## Gameplay
@@ -43,41 +43,46 @@ A youth group web app game where teams complete challenges to collect cash to in
 	- Give territories names, see example `polygons.json`
 4. Stand up a reverse proxy e.g. nginx:
 	<details>
-  <summary>`server.conf`</summary>
-server {
-    listen 80;
-    server_name FQDN; # Your domain or IP
-    return 301 https://$server_name$request_uri;
-}
-
-server {
-    listen 443 ssl;
-    server_name FQDN; # Your domain or IP
-    ssl_certificate /etc/ssl/certs/FQDN.crt; # Path to your certificate
-    ssl_certificate_key /etc/ssl/private/FQDN.key; # Path to your key
-    location / {
-        proxy_pass http://127.0.0.1:5000;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "upgrade";
-    }
-    location /socket.io {
-        proxy_pass http://127.0.0.1:5000; 
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade; 
-        proxy_set_header Connection "upgrade";
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    }
-    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload";
-    ssl_stapling on;
-    ssl_stapling_verify on;
-}
-</details>
+	<summary>server.conf</summary>
+		
+	```
+	server {
+	    listen 80;
+	    server_name FQDN; # Your domain or IP
+	    return 301 https://$server_name$request_uri;
+	}
+	
+	server {
+	    listen 443 ssl;
+	    server_name FQDN; # Your domain or IP
+	    ssl_certificate /etc/ssl/certs/FQDN.crt; # Path to your certificate
+	    ssl_certificate_key /etc/ssl/private/FQDN.key; # Path to your key
+	    location / {
+	        proxy_pass http://127.0.0.1:5000;
+	        proxy_set_header Host $host;
+	        proxy_set_header X-Real-IP $remote_addr;
+	        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+	        proxy_http_version 1.1;
+	        proxy_set_header Upgrade $http_upgrade;
+	        proxy_set_header Connection "upgrade";
+	    }
+	    location /socket.io {
+	        proxy_pass http://127.0.0.1:5000; 
+	        proxy_http_version 1.1;
+	        proxy_set_header Upgrade $http_upgrade; 
+	        proxy_set_header Connection "upgrade";
+	        proxy_set_header Host $host;
+	        proxy_set_header X-Real-IP $remote_addr;
+	        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+	    }
+	    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload";
+	    ssl_stapling on;
+	    ssl_stapling_verify on;
+	}
+	```
+ 
+	</details>
+ 
 5. Run `python3 -u server.py 2>&1 | tee -a server.log` (ideally inside a `screen`)
 
 ## Limitations
