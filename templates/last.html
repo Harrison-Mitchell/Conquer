@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latest Image</title>
+	<style>
+		html, body {
+			margin: 0;
+		}
+		img {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+    <img id="myImage" src="" alt="Latest Image">  </img>
+    <script>
+const imageElement = document.getElementById('myImage');
+
+function updateImage() {
+    fetch('/admin/image-last')
+        .then(response => {
+            if (!response.ok) {
+                if (response.status === 200) {
+                  return response.text(); //No image found, returns message
+                }
+                throw new Error(`HTTP error! status: ${response.status}`); // Other errors
+            }
+            return response.text(); // Get the data URL
+        })
+        .then(dataURL => {
+            imageElement.src = dataURL;
+        })
+        .catch(error => {
+            console.error('Error fetching image:', error);
+            // Handle error, e.g., set a placeholder image
+            imageElement.src = '/static/images/placeholder.png';
+        });
+}
+
+updateImage();
+setInterval(updateImage, 5000);
+	</script>  
+</body>
+</html>

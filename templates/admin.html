@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+	<h2>Enable Polygons</h2>
+	<form action="admin/enable-polygon" method="post">
+		{% for name in polygonState.keys() %}
+		{% if not polygonState[name].enabled %}
+		  <button name="enabled-polygon" value="{{ name }}" type="submit">
+			Enable {{ name }}
+		  </button>
+		{% endif %}
+		{% endfor %}
+	</form>
+	<h2>Toggle Gameplay Settings</h2>
+	<form action="admin/toggle-gameplay-setting" method="post">
+		{% for setting in gameplayState.keys() %}
+		  <button name="toggle-gameplay" value="{{ setting }}" type="submit">
+			{{ setting }} cur: {{ ["⛔","✅"][gameplayState[setting]] }}
+		  </button>
+		{% endfor %}
+	</form>
+	<h2>Blast Alert</h2>
+	<form action="admin/alert" method="post" autocomplete="off">
+		<input type="text" name="text" size="50">
+		<select id="team" name="team">
+			<option value="">Select a team or default all</option>
+			{% for team in teamState.keys() %}
+				<option value="{{ team }}">{{ teamState[team]["display_name"] }}</option>
+			{% endfor %}
+		</select>
+		<select id="icon" name="icon">
+			<option value="info" default>info</option>
+			{% for option in ["warning", "error", "success", "question"] %}
+				<option value="{{ option }}">{{ option }}</option>
+			{% endfor %}
+		</select>
+		<select id="form" name="form">
+			<option value="toast" default>toast</option>
+			<option value="popup">popup</option>
+		</select>
+		<button name="send-alert" type="submit">Blast</button>
+	</form>
+	<h2>Set Wallet</h2>
+	<form action="admin/set-wallet" method="post" autocomplete="off">
+		<input type="text" name="amount" placeholder="$" pattern="[0-9]*">
+		<select id="team" name="team" required>
+			<option value="">Select a team</option>
+			{% for team in teamState.keys() %}
+				<option value="{{ team }}">{{ teamState[team]["display_name"] }}</option>
+			{% endfor %}
+		</select>
+		<button name="set-wallet" type="submit">Set</button>
+	</form>
+	<script src="static/logic.js"></script>
+  </body>
+</html>

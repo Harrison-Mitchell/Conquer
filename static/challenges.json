@@ -1,0 +1,160 @@
+{
+	"challenges": [
+		{
+			"title": "Legal Graffiti",
+			"description": "Carve an animal into a rock with another rock. No one must care about either rock. A teammate must then correctly guess the animal on the first try."
+		},
+		{
+			"title": "Kick Through some Kicks",
+			"description": "Kick a tennis ball between a teammates legs. The teammate must be 10 leader steps away."
+		},
+		{
+			"title": "Shrimp on the Barbie",
+			"description": "Throw a flyer onto a BBQ plate from 3 leader steps away, or a park bench seat from 5."
+		},
+		{
+			"title": "Raised Hair",
+			"description": "Completed when a teammate first gets goosebumps - feel free to Google."
+		},
+		{
+			"title": "Dab Worthy",
+			"description": "Do 3 bottle flips in a row, dabbing each landing."
+		},
+		{
+			"title": "Traffic Engineer",
+			"description": "Pick a point on a road and guess how many cars will pass on both sides total in a minute. Your guess must be within 20% and there must be at least one car within the minute (no driveways). You only get one shot!"
+		},
+		{
+			"title": "Feed a Flyer",
+			"description": "Throw some food to a bird, they must take a bite within 15 seconds, you get one chance."
+		},
+		{
+			"title": "Time Usain Bolt",
+			"description": "Calculate 100m on Google Maps. Have a teammate run 100m and back. Have another teammate guess (±8s) how many seconds it will take. The runner and guesser must not communicate. You only get one chance."
+		},
+		{
+			"title": "Smelly Baseball",
+			"description": "Catch a tennis ball in a sock from 20m away."
+		},
+		{
+			"title": "Country Expert",
+			"description": "As a team, research and memorise 10 countries, in alphabetical order, that start with the same letter and repeat it correctly with devices off. You only get one chance."
+		},
+		{
+			"title": "Shrapnel Statistics",
+			"description": "Flip a coin to the same side 5 times in a row."
+		},
+		{
+			"title": "Crawling Triplets",
+			"description": "Collect 3 living things of unique species, humans nor flora count."
+		},
+		{
+			"title": "How-d-y ou do This One",
+			"description": "Have a member of the public say the word 'HOWDY' without asking them to say it."
+		},
+		{
+			"title": "Smooth Roller",
+			"description": "Roll a tennis ball down a travelator (stairless escalator) without it touching the sides."
+		},
+		{
+			"title": "Rock Up",
+			"description": "Build a freestanding rock tower 9 rocks tall. It must stand for 5 seconds."
+		},
+		{
+			"title": "Spotto",
+			"description": "Find a yellow car."
+		},
+		{
+			"title": "Modern Egyptians",
+			"description": "Make a human pyramid with every member of your team."
+		},
+		{
+			"title": "Synced Shoppers",
+			"description": "Standing inside the entrance of a shop, blindfold one teammate, then send another to find a mass-produced item less than $2. Allow the blindfolded teammate to study the item blind. They must then remove their blindfold, find the item in the aisle alone and bring it back. Only one attempt."
+		},
+		{
+			"title": "Water they Doing",
+			"description": "Using just your bodies, transport 1 cup worth of water 100m. Leaders will measure at the end. One attempt."
+		},
+		{
+			"title": "Rock and Roll",
+			"description": "Sitting on a rock, have three teammates get an oreo from their head to their mouth handsfree."
+		},
+		{
+			"title": "Sweet Guillotine",
+			"description": "Construct an apparatus that splits an oreo in half without cracking either biscuit. Like a rube goldberg machine, no one is to have any involvement once it's started."
+		},
+		{
+			"title": "We-R-1 We-R-Many",
+			"description": "Find 3 out of state license plates from different states."
+		},
+		{
+			"title": "Fur Real Fur Real",
+			"description": "Pat something with fur or feathers."
+		},
+		{
+			"title": "Am I Talking to me?",
+			"description": "Have a teammate call a Telstra phonebooth (you may need to Google their specific number) from their phone, have them answer the Telstra phone, and hold each phone to one ear. Then, sing a very echoy Australian national anthem."
+		},
+		{
+			"title": "Sedarahc",
+			"description": "You leader will play reverse charades with you. Using precise movement instructions they will get your team to perform a movement that they must then guess. E.g. 'hold your left and right hands straight up, palms facing each other, and make them touch really quickly' == 'clap'. Leaders, silently come up with three actions you might perform in your day to day or a sport."
+		},
+		{
+			"title": "Well Done",
+			"description": "Until you next claim a territory, every 👏 teammate 👏 must 👏 clap 👏 between 👏 each 👏 word 👏 they 👏 say."
+		},
+		{
+			"title": "Climb the Rigging",
+			"description": "On a single tree, have your team be cumulatively 5 metres off the ground."
+		},
+		{
+			"title": "Bussin Calcs",
+			"description": "Go to your nearest bus-stop, find its' stop ID number starting with 2, and multiply each number one by one, replacing zeros with nines, without using a calculator. E.g. 2152 = 2 x 1 x 5 x 2 = 20"
+		},
+		{
+			"title": "Cracking Standup",
+			"description": "Make your leader laugh; it cannot be a pity laugh."
+		},
+		{
+			"title": "Leaf it Alone",
+			"description": "Everyone must hold the tip of a leaf in your mouth and drop it into their pocket without using their hands. The leaf must remain in their pocket until 9pm or points will be taken off your score."
+		},
+		{
+			"title": "We Ballin'",
+			"description": "Form a circle. Pass a tennis ball around with just your elbows. Second time around, using just your chins. You get one attempt, any drop is a forfeit."
+		},
+		{
+			"title": "Call me Maybe",
+			"description": "Rip a phonebook in half with your bare hands."
+		},
+		{
+			"title": "Worse than Left on Seen",
+			"description": "Message someone not at youth and get a thumbs up react without using the words `thumb` or `react`."
+		},
+		{
+			"title": "From Aardvark to Zucchini",
+			"description": "Start on the Aardvark wikipedia page, without searching - only clicking links, get to the Zucchini page."
+		},
+		{
+			"title": "Sweet Knife",
+			"description": "You have 30 seconds to find something to help you cut a tim tam in half longways, leaving each flat wafer biscuit in-tact. Broken biscuit = forfeit."
+		},
+		{
+			"title": "Womp Womp",
+			"description": "Trap challenge. Your leader MUST forfeit."
+		},
+		{
+			"title": "Grounded Smiles",
+			"description": "Take a team selfie. The background must be entirely ground."
+		},
+		{
+			"title": "Thanks Queen",
+			"description": "Stand in a circle. One person starts by going around the circle and saying a genuine, not yet used compliment for each person. Each compliment recipient must then respond with 'thanks Queen!'. Continue clockwise until each person has personally complimented everyone. You must end your session with everyone saying in unison: 'yasssssssss queen fo real fo real what the sigma big yikes mad drip fam you bussin your fit hits diff no cap gives me the ick fat dub'"
+		},
+		{
+			"title": "Modern History",
+			"description": "Find the date of the very first post on Instagram"
+		}
+	]
+}
