@@ -130,7 +130,12 @@ def getChallenge(data):
 def passChallenge(data):
     print(f'{data["team"]} passed challenge')
     team, photo = data["team"], data["photo"]
-    challenge = completeChallenge(team)
+
+    # Prevent double submit while photo uploads and UI hangs
+    if teamState[team]["current_challenge"]["title"] == None:
+        return
+    else:
+        challenge = completeChallenge(team)
 
     if challenge["steal"]:
         victim = data["victim"]
