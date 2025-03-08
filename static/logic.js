@@ -475,7 +475,7 @@ socket.on('alert', (data) => {
 			toast: true,
 			position: "bottom",
 			showConfirmButton: false,
-			timer: 2500,
+			timer: 5000,
 			icon: category
 		})
 	} else {
